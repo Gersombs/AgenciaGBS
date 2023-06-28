@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Agencia GBS</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necesario para Bootstrap's JavaScript plugins) -->
+		 	<script src="js/jquery.min.js"></script>
+		<!-- Inicio scrolling suave -->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+		<!-- Fin Scrolling suave -->
+		<!-- Temas Personalizados -->
+			<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		<!-- Fin Temas Personalizados -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!-- Font Awesome -->
+   			<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+   		<!-- Fin Font Awesome -->
+		<!-- Webfonts -->
+			<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
+		<!-- Fin Webfonts -->
+		<!-- Nav Top Script -->
+			<script>
+				$(function() {
+					var pull 		= $('#pull');
+						menu 		= $('nav ul');
+						menuHeight	= menu.height();
+						$(pull).on('click', function(e) {
+						e.preventDefault();
+						menu.slideToggle();
+					});
+					$(window).resize(function(){
+						var w = $(window).width();
+						if(w > 320 && menu.is(':hidden')) {
+							menu.removeAttr('style');
+						}
+					});
+				});
+			</script>
+		<!-- Fin Nav Top Script -->
+	</head>
+	<body>
+		<!-- Container -->
+			<!-- Header -->
+				<div id="home" class="header scroll">
+					<div class="container">
+						<!-- Logo -->
+							<div class="logo">
+								<a href="#"><img src="images/logo.png" title="Blue agency" /></a>							  
+							</div>
+						<!-- Fin Logo -->
+						<!-- Top Nav -->
+						<nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Inicio</a></li>
+								<li class="page-scroll"><a href="#about" class="scroll">Información</a></li>
+								<li class="page-scroll"><a href="#services" class="scroll">Servicios</a></li>
+								<li class="page-scroll"><a href="#port" class="scroll">Portafolio</a></li>
+								<li class="page-scroll"><a href="#blog" class="scroll">Blog</a></li>
+								<li class="page-scroll"><a href="#team" class="scroll">Equipo</a></li>
+								<li class="page-scroll"><a href="#contact" class="scroll">Contacto</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menú" /></a>
+						</nav>
+							<div class="clearfix"> </div>
+						<!-- Fin Top Nav---->
+					</div>
+				</div>
+			<!-- Fin Header -->
+		<!-- Slider -->
+		<div class="slider">
+			<script src="js/responsiveslides.min.js"></script>
+			  <script>
+			    // Variante "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 3
+			      $("#slider3").responsiveSlides({
+			        manualControls: '#slider3-pager',
+			      });
+			    });
+			  </script>
+			  	<!-- Slideshow -->
+			    <ul class="rslides" id="slider3">
+			      <li>
+			      	<img src="images/slider-img1.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Soluciones Creativas</h1>
+			      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus velit quis risus eleifend bibendum.</p>
+			      		<a class="slid-btn" href="#">Leer más</a>
+			      	</div>
+			      </li>
+			      <li><img src="images/slider-img2.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Agencia GBS</h1>
+			      		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus velit quis risus eleifend bibendum.</p>
+			      		<a class="slid-btn" href="#">Leer más</a>
+			      	</div>
+			      </li>
+			      <li><img src="images/slider-img1.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Adaptado a tus necesidades</h1>
+			      		<p>GLorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus velit quis risus eleifend bibendum.</p>
+			      		<a class="slid-btn" href="#">Leer más</a>
+			      	</div>
+			      </li>
+			    </ul>
+			    <!-- Fin Slideshow -->
+			    <ul id="slider3-pager">
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			    </ul>
+		   </div>
+		<!-- Fin Slider -->
+		<!-- Sobre -->
+		<div id="about" class="about">
+			<div class="container">
+				<h2>Sobre nosotros</h2>
+				<p class="wellcome-note-head"><label>Somos una Agencia Digital de Servicios Completos.</label> Diseñamos y desarrollamos <span>Sitios web,&nbsp; </span><span>Aplicaciones,&nbsp; </span><span>Soluciones móviles,</span> y más</p>
+				<p class="wellcome-note-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus velit quis risus eleifend bibendum. Aenean dictum felis in eros ultrices eleifend. Phasellus ultrices congue feugiat. Vestibulum sed pretium sem, sed venenatis nibh. Phasellus nec tincidunt neque. Proin accumsan sagittis lacus ut lobortis.Proin molestie cursus tortor in eleifend. Suspendisse potenti.</p>
+				<!-- Sobre Grids -->
+				<div class="about-grids">
+					<div class="col-md-3 about-grid">
+						<span class="about-icon"> </span>
+						<h3><a href="#"><label>Reflexión</label> de ideas</a></h3>
+						<p>Velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+					</div>
+					<div class="col-md-3 about-grid">
+						<span class="about-icon1"> </span>
+						<h3><a href="#"><label>Concepción</label> de diseño</a></h3>
+						<p>Velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+					</div>
+					<div class="col-md-3 about-grid">
+						<span class="about-icon2"> </span>
+						<h3><a href="#"><label>Codificación</label> y desarrollo</a></h3>
+						<p>Velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+					</div>
+					<div class="col-md-3 about-grid">
+						<span class="about-icon3"> </span>
+						<h3><a href="#"><label>Eficacia</label> y rapidez</a></h3>
+						<p>Velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-- Fin Sobre Grids -->
+			</div>
+		</div>
+		<!-- Fin Sobre -->
+		<!-- Servicios -->
+		<div id="services" class="services">
+			<div class="container">
+				<h3>Servicios<label> </label></h3>
+			<!-- Servicios Lista -->
+			<div class="services-list text-center">
+				<ul class="list-unstyled list-inline">
+					<li>
+						<a href="#"><span class="service-icon"> </span><label>Móvil</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon1"> </span><label>Diseño</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon2"> </span><label>Redes sociales</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon3"> </span><label>E-commerce</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon4"> </span><label>Base de datos</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon5"> </span><label>Comunicaciones</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon6"> </span><label>Tecnología</label></a>
+					</li>					  
+				</ul>
+			</div>
+			<!-- Fin Servicios Lista -->
+			</div>
+		</div>
+		<!-- Fin Servicios---->
+		<!-- Portfolio -->
+			<div id="port" class="portfolio portfolio-box">
+				<div class="container">
+					<h3>Portfolio<label> </label></h3>
+			<!-- Portfolio Contenedor -->
+         			<div id="port" class="container portfolio-main">
+	        	<!-- Portfolio Script -->
+						<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+						<script type="text/javascript">
+							$(function () {
+								var filterList = {
+									init: function () {
+								
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+										});				
+								
+									},
+									hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+										}		
+									);				
+								
+								}
+					
+								};
+							
+								filterList.init();
+							});	
+					</script>
+					<!-- Fin Portfolio Script -->
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span> /</li>
+						<li><span class="filter" data-filter="app">Diseño</span> /</li>
+						<li><span class="filter" data-filter="card">Fotografía</span> /</li>
+						<li><span class="filter" data-filter="icon">Video</span> /</li>
+						<li><span class="filter" data-filter="app">Print</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                <div class="port-info">
+		                	<h4><a href="#">Pxfuel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">Pinterest</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>		
+					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                <div class="port-info">
+		                	<h4><a href="#">DevianArt</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">Pinterest</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">DevianArt</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">Pxfuel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">DevianArt</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">Pxfuel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">Pinterest</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>	
+					<a class="more-ports text-center" href="#"><span> </span></a>																																				
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+         <!-- Fin Portfolio Contenedor-->
+         <!-- Testimonios -->
+         <div class="testmonials">
+         	<div class="container">
+	         	<div class="client-pic col-md-4">
+	         		<img src="images/client.jpg" title="name" />
+	         	</div>
+	         	<div class="client-sys col-md-8">
+	         		<!--  Testimonios Slider -->
+	         		<link rel="stylesheet" href="css/testmonial.css">
+  					<script src="js/prefixfree.min.js"></script>
+	         		<!-- Fin Testimonios Slider -->
+	         		<div class="gallery autoplay items-3">
+					    <div id="item-1" class="control-operator"></div>
+					    <div id="item-2" class="control-operator"></div>
+					    <div id="item-3" class="control-operator"></div>
+					    <figure class="item">
+					      <h3>Mejores que Luis Miguel:</h3>
+					      <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <figure class="item">
+					      <h3>La mejor opción:</h3>
+					     <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <figure class="item">
+					      <h3>Quiero unas papas:</h3>
+					      <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <div class="clearfix"> </div>
+					    <div class="controls">
+					      <a href="#item-1" class="control-button"><span> </span></a>
+					      <a href="#item-2" class="control-button"><span> </span></a>
+					      <a href="#item-3" class="control-button"><span> </span></a>
+					    </div>
+					    <div class="clearfix"> </div>
+				  </div>
+	         	</div>
+	         	<div class="clearfix"> </div>
+         	 </div>
+         </div>
+          <!-- Fin Testimonios -->
+		<!-- Fin Portfolio -->
+		<!-- Equipo -->
+		<div id="team" class="team">
+			<div class="container">
+				<div class="team-members text-center">
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="#"><img src="images/t1.jpg" title="member-name" /></a>
+						<h3><a href="#">Bruce Lee</a></h3>
+						<span>Actor</span>
+						<p>vel egestas diam dui nec mauris. Sed tincidunt felis at feugiat euismod. Praesent lacinia posuere massa. Proin quis purus in neque aliquam .</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="#"><img src="images/t2.jpg" title="member-name" /></a>
+						<h3><a href="#">Marilyn Monroe</a></h3>
+						<span>Actriz</span>
+						<p>vel egestas diam dui nec mauris. Sed tincidunt felis at feugiat euismod. Praesent lacinia posuere massa. Proin quis purus in neque aliquam .</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="#"><img src="images/t3.jpg" title="member-name" /></a>
+						<h3><a href="#">Casper</a></h3>
+						<span>Actor</span>
+						<p>vel egestas diam dui nec mauris. Sed tincidunt felis at feugiat euismod. Praesent lacinia posuere massa. Proin quis purus in neque aliquam .</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Fin Equipo -->
+		<!-- Brand Carsuals -->
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		<div class="brand-carsuals">
+			<ul id="flexiselDemo3">
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>                                                 
+			</ul>   
+			<script type="text/javascript">
+				$(window).load(function() {
+				    $("#flexiselDemo3").flexisel({
+				        visibleItems: 5,
+				        animationSpeed: 1000,
+				        autoPlay: true,
+				        autoPlaySpeed: 3000,            
+				        pauseOnHover: true,
+				        enableResponsiveBreakpoints: true,
+				        responsiveBreakpoints: { 
+				            portrait: { 
+				                changePoint:480,
+				                visibleItems: 1
+				            }, 
+				            landscape: { 
+				                changePoint:640,
+				                visibleItems: 2
+				            },
+				            tablet: { 
+				                changePoint:768,
+				                visibleItems: 3
+				            }
+				        }
+				    });
+				    
+				});
+			</script>
+		</div>
+		<!-- Fin Brand Carsuals -->
+		<!-- Inicio Blog -->
+		<div id="blog" class="blog">
+			<div class="container">
+				<h3>Blog<label> </label></h3>
+				<div class="blog-grids">
+					<div class="col-md-4 blog-grid-row frist-row">
+						<a class="post-pic" href="#"><img src="images/post-pic.jpg" title="pic-name" /></a>
+						<!-- Arti Info-->
+						<div class="artical-info">
+							<div class="post-head">
+								<div class="post-head-left">
+									<h4><a href="#">Título del Blog</a></h4>
+									<p class="author">Por <a href="#"> Pikachu</a></p>
+								</div>
+								<div class="post-head-right">
+									<span>17</span><label>Abril 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">10 Comentarios</a> | <i class="fa fa-heart"> </i> 50</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn" href="#">Leer Más</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!-- Fin Arti Info-->
+					</div>
+					<!-- 1/2 -->
+					<div class="col-md-4 artical-row2">
+						<!-- Arti Info -->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">Título del Blog</a></h4>
+									<p class="author">Por <a href="#"> Umbreon</a></p>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>20</span><label>Abril 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">10 Comentarios</a> | <i class="fa fa-heart"> </i> 60</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn artbtn1" href="#">Leer Más</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!-- Fin Arti Info-->
+						<!-- Arti Info -->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">Título del Blog</a></h4>
+									<p class="author">Por <a href="#"> Ash</a></p>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>20</span><label>Abril 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">15 Comentarios</a> | <i class="fa fa-heart"> </i> 90</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn artbtn1" href="#">Leer Más</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+					</div>
+					<!-- 3/4-->
+					<div class="col-md-4 artical-row2">
+						<!-- Arti Info -->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">Título del Blog</a></h4>
+									<p class="author">Por <a href="#"> Lugia</a></p>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>25</span><label>Abril 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">10 Comentarios</a> | <i class="fa fa-heart"> </i> 10</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn artbtn1" href="#">Leer Más</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!-- Fin Arti Info -->
+						<!-- Arti Info -->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">Título del Blog</a></h4>
+									<p class="author">Por <a href="#">Pto quien lo lea</a></p>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>30</span><label>Abril 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">20 Commentarios</a> | <i class="fa fa-heart"> </i> 151</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn artbtn1" href="#">Leer Más</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!-- Fin Arti Info -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Fin Blog -->
+		<!-- Contacto -->
+		<div id="contact" class="contact">
+			<div class="container">
+				 <h3>Contacto<label> </label></h3>
+				<div class="contact-grids">
+					<div class="col-md-6 contact-grid-left">
+						<form method="post" action="contact-post.html">
+							<input type="text" value="Nombre " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+							<input type="text" value="Asunto" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+							<textarea onfocus="if(this.value == 'Tu mensaje aquí....') this.value='';" onblur="if(this.value == '') this.value='Tu mensaje....?';">Tu mensaje....</textarea>
+							<p class="conditions"> <span>*</span>scelerisque sit amet felis sit nunc.</p>
+							<span class="submit-btn"><input type="submit" value="Send"></span>
+						</form>
+					</div>
+					<!-- Contacto Social -->
+					<div class="col-md-6 contact-grid-right">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60198.92592361054!2d-99.17821504475604!3d19.436895081228975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1687925022520!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia.</p>
+						<div class="col-md-4">
+							<h5>Teléfono</h5>
+							<span>+52 123456789</span>
+						</div>
+						<div class="col-md-4">
+							<h5>Dirección</h5>
+							<span>Lago X,</span>
+							<span>Anáhuac, CDMX,</span>
+							<span>México,</span>
+						</div>
+						<div class="col-md-4">
+							<h5>Email</h5>
+							<span><a href="#">GBS-agency.com</a></span>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-- Contacto social -->
+				<ul class="list-unstyled list-inline contact-social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-skype"></i></a></li>
+				</ul>
+				<!-- Fin contacto social -->
+		</div>
+		</div>
+		<!-- Fin contacto -->
+		<!-- Copy -->
+		<div class="copy-right">
+			<div class="container">
+				<p> &copy; Todos los derechos reservados <a href="#">GBS</a></p>
+					<script type="text/javascript">
+				$(document).ready(function() {	
+				$().UItoTop({ easingType: 'easeOutQuart' });	
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!-- Fin Copy--->
+		<!-- Fin container -->
+	</body>
+</html>
+
